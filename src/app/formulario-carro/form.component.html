@@ -1,0 +1,37 @@
+<div class="container mt-5">
+  <div *ngIf="!formSubmitted" class="border rounded-lg shadow-lg bg-dark p-5">
+    <h2 class="text-laft mb-4 text-white">Compra de Carro</h2>
+    <form [formGroup]="Form" (ngSubmit)="onSubmit()">
+      <div class="mb-4">
+        <label for="nomecarro" class="form-label text-white">Nome Carro</label>
+        <input id="nomecarro" formControlName="nomecarro" type="text" class="form-control form-control-lg" required />
+      </div>
+      <div class="mb-4">
+        <label for="marcacarro" class="form-label text-white">Marca carro</label>
+        <input id="marcacarro" formControlName="marcacarro" type="text" class="form-control form-control-lg" required />
+      </div>
+      <div class="mb-4">
+        <label for="cidade" class="form-label text-white">Cidade</label>
+        <input id="cidade" formControlName="cidade" type="text" class="form-control form-control-lg" required />
+      </div>
+      <div class="mb-4">
+        <label for="Valor" class="form-label text-white">Valor</label>
+        <input id="Valor" formControlName="Valor" type="tel" class="form-control form-control-lg" required />
+      </div>
+      <div class="mb-4">
+        <label for="corcarro" class="form-label text-white">Cor do carro</label>
+        <input id="corcarro" formControlName="corcarro" type="text" class="form-control form-control-lg" required />
+      </div>
+      <div class="mb-4">
+        <label for="vendedor" class="form-label text-white">Vendedor</label>
+        <input id="vendedor" formControlName="vendedor" type="text" class="form-control form-control-lg" required />
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg w-100 btn-effect">Concluir</button>
+    </form>
+  </div>
+
+  <div *ngIf="formSubmitted" class="text-center mt-5 p-4 border rounded-lg shadow-lg bg-success text-white">
+    <h2 class="mb-3">Sua compra foi realizada</h2>
+    <p class="lead mb-4">Volte sempre</p>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+.bg-gradient {
+  background: linear-gradient(45deg, #ff758c, #ff7eb3); 
+  color: #000000;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.title-glow {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+  animation: glow 2s infinite alternate; 
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 34, 34, 0.5), 0 0 20px rgba(255, 118, 136, 0.4);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 118, 136, 0.6);
+  }
+}

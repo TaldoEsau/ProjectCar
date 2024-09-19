@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1f4037, #99f2c8); 
+  color: #fff; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.05); 
+  backdrop-filter: blur(15px); 
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  width: 100%;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  align-items: center;
+  font-weight: 600;
+  color: #ffda79; 
+}
+
+.btn-effect {
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4); 
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: 100%;
+  position: relative;
+}
+
+.btn-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.2); 
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+
+.btn-effect:hover::before {
+  transform: scaleX(100%);
+}
+
+
+
+.form-control-lg {
+  background: rgba(255, 255, 255, 0.2); 
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  color: #ffda79; 
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.form-control-lg:focus {
+  outline: none;
+  box-shadow: 0 0 10px #ffda79; 
+}
+
+.bg-success {
+  background: linear-gradient(135deg, #11998e, #38ef7d) !important; 
+  color: white !important;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.btn-primary {
+  background-color: #ff758c;
+  border-color: #ff758c;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ff2d55; 
+}
+
+.btn-light {
+  background-color: #ffe5b4;
+  color: #333;
+  border-radius: 50px;
+  padding: 12px 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-light:hover {
+  background-color: #ffcc00; 
+}
